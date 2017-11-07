@@ -1,0 +1,10 @@
+Development Guide
+=================
+
+Run watcher with cmd
+--------------------
+
+> go get github.com/codegangsta/gin
+> gin --all run main.go
+
+call url http://localhost:3000/
