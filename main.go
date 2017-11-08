@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/labstack/echo"
-	"github.com/mongmx/load-test-echo/app/controllers"
+	"github.com/mongmx/echo-project-template/app/controllers"
 )
 
 // Template : template renderer
