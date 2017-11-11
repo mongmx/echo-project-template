@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/labstack/echo"
-	"github.com/mongmx/echo-project-template/app/controllers"
+	c "github.com/mongmx/echo-project-template/app/Controllers"
 )
 
 // Template : template renderer
@@ -29,8 +29,8 @@ func main() {
 	e.Static("/public", "public")
 	e.File("/favicon.ico", "public/favicon.ico")
 
-	e.GET("/", controllers.HomeIndex)
-	e.GET("/home", controllers.HomeHello)
+	e.GET("/", c.HomeController{}.Index)
+	e.GET("/home", c.HomeController{}.Hello)
 
 	e.Logger.Fatal(e.Start(":3001"))
 }
